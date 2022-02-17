@@ -4,9 +4,9 @@
 
 let dokument = prompt("Vnesete ime na dokument");
 
-function pronajdiEkstenzija(str){
-	let pozicija = str.indexOf(".");
-  let ekstenzija=str.slice(pozicija);
+function pronajdiEkstenzija(str) {
+  let pozicija = str.indexOf(".");
+  let ekstenzija = str.slice(pozicija);
   return ekstenzija;
 }
 
