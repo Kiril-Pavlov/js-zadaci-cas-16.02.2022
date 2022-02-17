@@ -1,0 +1,21 @@
+/*
+6. Nadogradena 5ta , so toa shto ako nekoj vnese losh fajl format, da ispecatime “Nepoznat format”
+niza poznati formati
+["doc","html","css","ptt","txt","odt","java","py","cpp","mp4"]
+*/
+
+let dokument = prompt("Vnesete ime na dokument");
+
+function validnaEkstenzija(str) {
+  let pozicija = str.indexOf(".")+1;
+  let ekstenzija = str.slice(pozicija);
+  let validniFormati = ["doc","html","css","ptt","txt","odt","java","py","cpp","mp4"]
+  if(validniFormati.includes(ekstenzija)){
+  	return 'Ekstenzijata e validna'
+  }else {
+  	return 'Nevalidna ekstenzija'
+  }
+}
+
+let rezultat = validnaEkstenzija(dokument);
+console.log(rezultat);
