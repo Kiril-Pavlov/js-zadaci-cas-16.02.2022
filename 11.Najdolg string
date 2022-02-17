@@ -1,0 +1,36 @@
+/*
+11. Funkcija sto prima niza od stringovi, i go vrakja najdolgiot string
+*/
+
+let niza=[
+'above',
+'accept',
+'according',
+'account',
+'across',
+'act',
+'action',
+'activity',
+'actually',
+'add',
+'address',
+'administration',
+'admit',
+'adult',
+'affect',
+'after',
+'again']
+function najdolgString(arr){
+	let maxDolzina=arr[0].length;
+  let maxString=arr[0];
+  for(let i=1;i<arr.length;i++){
+  	if(maxDolzina<arr[i].length){
+    	maxDolzina=arr[i].length;
+      maxString=arr[i];
+    }
+  }
+	return maxString;
+}
+
+let rezultat=najdolgString(niza);
+console.log(rezultat);
