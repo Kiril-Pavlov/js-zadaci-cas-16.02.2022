@@ -1,0 +1,16 @@
+/*
+10. Funkcija koja ke go vrati polovina zborot
+avtomobil -> avtom
+skopje -> sko
+*/
+
+function prepoloviString(str){
+	let sredina=Math.ceil(str.length/2);
+	return str.slice(0,sredina);
+}
+
+let rezultat1 = prepoloviString('avtomobil');
+console.log(rezultat1);
+
+let rezultat2 = prepoloviString('skopje');
+console.log(rezultat2);
