@@ -1,0 +1,31 @@
+/*
+8. Za vneseni poeni od prompt ,da se vrati koja ocenka dobil
+[91-100] 10ka
+[81-90] 9ka
+[71-80] 8ka
+[61-70] 7ka
+[5-60] 6ka
+[0-50] Ne e polozen
+
+let person = prompt("Please enter your name", "Harry Potter");
+*/
+
+let poeni = prompt("Vnesete broj na poeni:","0-100");
+
+if(poeni<0 || poeni>100){
+	console.log("Poenite koi se vneseni ne se pomegu 0 i 100!");
+} else {
+	if(poeni>91){
+  	console.log("Polozeno so 10ka");
+  }else if(poeni>81){
+  	console.log("Polozeno so 9ka")
+  }else if(poeni>71){
+  	console.log("Polozeno so 8ka")
+  }else if(poeni>61){
+  	console.log("Polozeno so 7ka")
+  }else if(poeni>51){
+  	console.log("Polozeno so 6ka")
+  }else{
+   console.log("Ne e polozeno");
+  }
+}
