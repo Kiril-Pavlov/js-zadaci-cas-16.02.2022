@@ -1,0 +1,20 @@
+/*
+9. Da se napise funkcija vo koja ke se izbrojat i vrati broj na samolgaski vo stringot
+*/
+
+function prebrojSamoglaski(str){
+	let samoglaski = ["a","e","i","o","u"];
+  let brojac=0;
+  for(let i=0; i<str.length;i++){
+    if(samoglaski.includes(str[i])){
+    	brojac++;
+    }
+  }
+  return brojac;
+}
+
+let rezultat1 = prebrojSamoglaski('avtomobil');
+console.log(rezultat1);
+
+let rezultat2 = prebrojSamoglaski('skopje');
+console.log(rezultat2);
