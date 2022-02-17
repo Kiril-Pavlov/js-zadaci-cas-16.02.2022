@@ -1,0 +1,14 @@
+/*
+5. Vnesuvame ime na fajl vo prompt ( index.html, style.css, script.js) i programata da ni ja kaze ekstenzijata
+*/
+
+let dokument = prompt("Vnesete ime na dokument");
+
+function pronajdiEkstenzija(str){
+	let pozicija = str.indexOf(".");
+  let ekstenzija=str.slice(pozicija);
+  return ekstenzija;
+}
+
+let rezultat = pronajdiEkstenzija(dokument);
+console.log(rezultat);
