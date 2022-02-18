@@ -1,0 +1,36 @@
+/* 
+7. Da se napise funkcija koja sto ke proveri dali na vnesen string prvite 3 karakteri se so mala bukva, i ako site 3 se mali, da se napravat golemi, i da se vrati noviot string
+
+*/
+
+let zbor = prompt("Vnesete zbor");
+
+
+
+function prviTriKarakteri(str){
+/*for (let i = 0; i < 3; i++) {
+  if (str[i] === str[i].toLowerCase() && str[i+1] === str[i+1].toLowerCase() && str[i+2] === str[i+2].toLowerCase()) {
+    str[i] = str.charAt(i).toUpperCase();
+    //str[i+1] = str[i+1].toUpperCase();
+    //str[i+2] = str[i+2].toUpperCase();
+    return str;
+  }else {
+  	return 'Barem edna od prvite 3 bukvi e golema';
+  }
+  }*/
+  if (str[0] === str[0].toLowerCase() && str[1] === str[1].toLowerCase() && str[2] === str[2].toLowerCase()){
+  //str.charAt(0).toUpperCase();
+  let pocetok = str.slice(0,3);
+  let pocetok2 = pocetok.toUpperCase();
+  let kraj = str.slice(3,str.length);
+  //console.log(pocetok2);
+  //console.log(kraj);
+  return pocetok2+kraj;
+  }else {
+  return 'Barem edna od prvite 3 bukvi e golema';
+  }
+  
+}
+
+let rezultat = prviTriKarakteri(zbor);
+console.log(rezultat);
