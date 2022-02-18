@@ -1,0 +1,15 @@
+/* 
+3. Preku venesen input za temperatura vo Kelvini, da vratite kolku stepeni Celzjusovi e istata
+Formula : c/5 = (f-32)/9
+napravete funkcija shto pretvara Kelvin - Celzjus
+i preku input vcitajte brojka i povikajte ja funkcijata vr z nea
+*/
+
+let kelvin = prompt("Vnesete temperatura vo kelvini");
+
+function kelvinVoCelzius(kelvin){
+	let celzius = kelvin - 273.15;
+  return celzius;
+}
+
+console.log(`Temperaturata vo celziusi iznesuva ${kelvinVoCelzius(kelvin)}`)
