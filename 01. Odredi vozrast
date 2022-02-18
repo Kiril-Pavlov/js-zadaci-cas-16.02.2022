@@ -1,0 +1,9 @@
+/* 1. Create a web page that calculates how old you are and displays the result. */
+
+let godina=prompt("Vnesete ja vashata godina na raganje");
+
+let today= new Date();
+let denes= today.getFullYear();
+
+let vozrast =denes-godina;
+console.log(`Vie imate ${vozrast} godini`);
