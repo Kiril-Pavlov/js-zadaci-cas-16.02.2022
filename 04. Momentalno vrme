@@ -1,0 +1,45 @@
+/* 
+4. Programa koja shto ke pecati vo vakov format,
+(Hint, rabota so Date() )
+Today is : Tuesday.
+Current time is : 10 PM : 30 : 38
+*/
+
+let today = new Date();
+//let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+let den = today.getDay();
+let denPrint='';
+switch(den){
+	case 0: denPrint = 'Nedela';
+  break;
+  case 1: denPrint = 'Ponedelnik';
+  break;
+  case 2: denPrint = 'Vtornik';
+  break;
+  case 3: denPrint = 'Sreda';
+  break;
+  case 4: denPrint = 'Cetvrtok';
+  break;
+  case 5: denPrint = 'Petok';
+  break;
+  case 6: denPrint = 'Sabota';
+  break;
+  default:console.log("Imate nekoja greska");
+}
+
+let cas = today.getHours();
+let casPrint = 0;
+let amORpm = '';
+if (cas>12){
+	casPrint = cas - 12;
+  amORpm = 'PM';
+}else {
+	casPrint = cas;
+	amORpm = 'AM';
+}
+
+
+
+console.log(`Denes e : ${denPrint}`);
+console.log(`Vremeto vo momentot iznesuva : ${casPrint} : ${today.getMinutes()}  : ${today.getSeconds()} :  ${amORpm}`)
