@@ -1,0 +1,10 @@
+/* 
+2. Napravete niza shto ke se vika planeti od ovie elementi, i otstranete go pluto
+Sun Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune Pluto
+*/
+
+let planeti = ['Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus' ,'Neptune', 'Pluto'];
+
+planeti.pop();
+
+console.log(planeti);
